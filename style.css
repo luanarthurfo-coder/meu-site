@@ -93,9 +93,11 @@ ul {
 .btn-outline {
     background-color: transparent;
     color: var(--color-dark-teal);
-    border: 2px solid var(--color-dark-teal);
+    border: 1.5px solid var(--color-dark-teal);
     margin-left: 10px;
     box-shadow: none;
+    padding: 10px 24px;
+    font-size: 0.9rem;
 }
 
 .btn-outline:hover {
@@ -435,7 +437,25 @@ header nav {
 /* Hide floats on mobile to prevent overflow/clutter */
 @media (max-width: 968px) {
     .hero-float {
-        display: none;
+        display: flex;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        z-index: 20;
+    }
+
+    .c1 {
+        top: 0%;
+        left: -10px;
+    }
+
+    .c2 {
+        right: -10px;
+        padding: 12px 25px;
+    }
+
+    .c3 {
+        bottom: -10%;
+        left: 0;
     }
 }
 
