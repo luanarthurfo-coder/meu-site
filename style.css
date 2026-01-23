@@ -108,8 +108,9 @@ ul {
 }
 
 .btn-lg {
-    padding: 18px 48px;
-    font-size: 1.2rem;
+    padding: 20px 56px;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
 }
 
 .btn-light {
