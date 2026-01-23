@@ -813,36 +813,52 @@ footer p {
 @media (max-width: 968px) {
 
     /* Layout Adjustments */
-    .hero-content,
-    .content-wrapper {
-        grid-template-columns: 1fr;
+    .hero-content {
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        gap: 40px;
+        gap: 0;
     }
 
     .hero-text {
-        order: 2;
+        display: contents;
     }
 
-    .hero-image {
+    .badge {
         order: 1;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .hero-text h1 {
+        order: 2;
         font-size: 2.5rem;
+        margin-bottom: 20px;
     }
 
     .hero-text p {
+        order: 3;
         margin: 0 auto 30px;
     }
 
+    .hero-image {
+        order: 4;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
     .hero-btns {
+        order: 5;
         display: flex;
         flex-direction: column;
         gap: 15px;
         align-items: center;
         width: 100%;
+    }
+
+    .trust-indicators {
+        order: 6;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .btn {
